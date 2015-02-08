@@ -1,0 +1,98 @@
+/*
+Kevin Van Buren
+PWA 2 - Project 1 - style.css
+Section 01 - Online
+*/
+
+/* ---- Start index.html Page ---- */
+/* - Start Main Content - */
+body {
+    width: 960px;
+    font-size: 1em;
+    background-color: #4994d0;
+    color: #f3f4f4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* - End Main Content - */
+
+/* - Start Navigation Menu - */
+.nav-bar {
+    padding: 10px;
+    margin-top: -22px;
+    list-style: none;
+    float: right;
+    width: 960px;
+    overflow: hidden;
+    background-color: #9a9b9d;
+    box-shadow: #202 0 2px 30px 0;
+}
+.nav-bar ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 480px;
+    text-align: center;
+}
+.nav-bar ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin:0;
+    padding: 2px;
+    position: relative;
+}
+.nav-bar ul li:first-child {
+    background-color: #9a9b9d;
+    left: -460px;
+    font-size: 1.5em;
+    color: #f3f4f4;
+    box-shadow: #002F2F 0 0 20px 5px;
+}
+/* - End Navigation Menu - */
+
+/* - Start Call to Action - */
+#ProjectSpiral {
+    text-align: center;
+    line-height: 0;
+    background-color: #fbed23;
+    height: 105px;
+    color: #202020;
+}
+#ProjectSpiral h1 {
+    padding-top: 55px;
+}
+#ProjectSpiral h3 {
+    margin-top: 35px;
+}
+#benefits {
+    border: groove #202020;
+    padding: 10px;
+}
+/* - End Call to Action - */
+
+/* ---- End index.html Page ---- */
+
+
+/* ---- Start register.html Page ---- */
+#register {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.title {
+
+}
+.input {
+    margin: 5px 0 5px 0;
+}
+/* ---- End register.html Page ---- */
+
+
+/* ---- Start admin.html Page ---- */
+p {
+    line-height: 0;
+}
+#signOut {
+    float: right;
+}
+/* ---- End admin.html Page ---- */
