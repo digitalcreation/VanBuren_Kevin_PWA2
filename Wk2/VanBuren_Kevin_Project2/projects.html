@@ -1,0 +1,90 @@
+<!doctype html>
+<!--
+	Kevin Van Buren
+	PWA 2 - Project 2 - projects.html
+	Section 01 - Online
+-->
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Project Spiral</title>
+    <meta name="Project Spiral" content="">
+    <meta name="Kevin Van Buren" content="">
+
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS concatenated and minified via ant build script-->
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <!-- end CSS-->
+
+</head>
+<body>
+<!-- Start Nav Bar -->
+    <nav>
+        <div class="nav-bar">
+            <ul>
+                <li class="LogoPlaceHolder">Logo</li>
+                <li><span>Welcome User:</span></li>
+                <li><input id="signOut" type="submit" value="Sign Out"/></li>
+                <li><input id="yourAccount" type="submit" value="Your Account"/></li>
+                <li><input id="dashboard" type="submit" value="Dashboard" onclick="location.href='admin.html'"/></li>
+            </ul>
+        </div>
+    </nav>
+<!-- End Nav Bar -->
+<!-- Start Banner -->
+    <div class="welcome">
+        <p><a href="#" class="modalClick"><input id="addProject" type="submit" value="Add Project"></a></p>
+    </div>
+<!-- End Banner -->
+    <h1>Current Projects</h1>
+<!-- Start Modal -->
+    <div id="overlay">
+        <div id="modal">
+            <img class="close masterTooltip" title="Close" src="images/close.png" width="32" height="32">
+            <h3 class="header">Add Project</h3>
+            <div id="add">
+                <form id="addForm">
+                    <label class="colLeft">Project Name: </label>
+                    <input class="colRight" name="projectName" type="text" id="projectName"/>
+                    <br>
+                    <label class="colLeft">Project Description: </label>
+                    <input class="colRight" name="projectDescription" type="text" id="projectDescription"/>
+                    <br>
+                    <label class="colLeft">Project Due Date: </label>
+                    <input class="colRight" name="projectDueDate" type="text" id="projectDueDate"/>
+                    <br>
+                    <label for="status">Select Status: </label>
+                    <br>
+                    <label class="mystatus">
+                        <input type="radio" name="status" id="normal"> <img src="images/info.png" width="64" height="64" class="masterTooltip" title="Mark as 'Normal'">
+                    </label>
+                    <label class="mystatus">
+                        <input type="radio" name="status" id="delayed"> <img src="images/calendar.png" width="64" height="64" class="masterTooltip" title="Mark as 'Delayed'">
+                    </label>
+                    <label class="mystatus">
+                        <input type="radio" name="status" id="urgent"> <img src="images/urgent.png" width="64" height="64" class="masterTooltip" title="Mark as 'Urgent'">
+                    </label>
+                    <label class="mystatus">
+                        <input type="radio" name="status" id="complete"> <img src="images/check.png" width="64" height="64" class="masterTooltip" title="Mark as 'Complete'">
+                    </label>
+                    <br>
+                    <input class="colRight" name="addButton" type="button" id="addButton" value="Add"/>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- End Modal -->
+    <!-- jquery -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!-- plugins -->
+
+    <!-- main -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

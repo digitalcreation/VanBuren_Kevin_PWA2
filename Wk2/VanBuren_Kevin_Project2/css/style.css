@@ -1,0 +1,249 @@
+/*
+Kevin Van Buren
+PWA 2 - Project 1 - style.css
+Section 01 - Online
+*/
+
+/* ----------------------------------- Start index.html Page & Main site content ----------------------------------- */
+/* ----------------------------- Start Main Content ----------------------------- */
+body {
+    width: 960px;
+    font-size: 1em;
+    background-color: #202020;
+    color: #f3f4f4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ------------------------------ End Main Content ----------------------------- */
+/* ---------------------------------- Tool Tip --------------------------------- */
+.tooltip {
+    display: none;
+    position: absolute;
+    border: 1px solid #333;
+    background-color: rgba(2, 0, 2, 0.70);
+    border-radius: 5px;
+    box-shadow: #4994d0 0 0 7px 0;
+    padding: 10px;
+    color: #f3f4f4;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 1002;
+}
+/* ------------------------------- End Tool Tip -------------------------------- */
+
+/* --------------------------- Start Navigation Menu --------------------------- */
+.nav-bar {
+    padding: 10px;
+    margin-top: -22px;
+    list-style: none;
+    float: right;
+    width: 960px;
+    overflow: hidden;
+    background-color: #9a9b9d;
+    box-shadow: #202 0 2px 30px 0;
+}
+.nav-bar ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 480px;
+    text-align: center;
+}
+.nav-bar ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin:0;
+    padding: 2px;
+    position: relative;
+}
+.nav-bar ul li:first-child {
+    background-color: #9a9b9d;
+    left: -460px;
+    font-size: 1.5em;
+    color: #f3f4f4;
+    box-shadow: #002F2F 0 0 20px 5px;
+}
+/* ---------------------------- End Navigation Menu --------------------------- */
+
+/* --------------------------- Start Call to Action --------------------------- */
+#ProjectSpiral {
+    text-align: center;
+    line-height: 0;
+    background-color: #fbed23;
+    height: 105px;
+    color: #202020;
+}
+#ProjectSpiral h1 {
+    padding-top: 55px;
+}
+#ProjectSpiral h3 {
+    margin-top: 35px;
+}
+#benefits {
+    background: #4994d0;
+    padding: 10px;
+}
+/* ---------------------------- End Call to Action ---------------------------- */
+
+
+/* ------------------------------------ End index.html Page & Main site content ------------------------------------ */
+
+/* -------------------------------------------- Start register.html Page ------------------------------------------- */
+#register {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.title {
+    margin: 5px 0 5px 0;
+}
+.input {
+    margin: 5px 0 5px 0;
+}
+#regForm {
+    background: #4994d0;
+}
+/* -------------------------------------------- End register.html Page --------------------------------------------- */
+
+
+/* --------------------------------------------- Start admin.html Page --------------------------------------------- */
+p {
+    line-height: 0;
+}
+#signOut {
+    float: right;
+}
+/* --------------------------------------------- End admin.html Page ----------------------------------------------- */
+
+
+/* ------------------------------- Tabs ------------------------------- */
+#tabs {
+    background-color: #4994d0;
+    width: 600px;
+    height: 75px;
+    padding: 20px;
+}
+#tabs p{
+    line-height: normal;
+}
+#tabs-nav {
+    width: 640px;
+    height: 40px;
+    padding: 20px 0 0 0;
+    background-color: #4994d0;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+#tabs-nav li {
+    display: inline;
+    background-color: #fbed23;
+    padding: 15px;
+    margin: 0 63px 0 63px;
+    border-radius: 5px;
+    box-shadow: #202020 0 0 5px 0;
+}
+#tabs-nav li:hover {
+    box-shadow: #f3f4f4 0 0 15px 1px;
+    cursor: pointer;
+}
+#tabs-nav li a{
+    color: #202020;
+    text-decoration: none;
+    font-weight: bold;
+}
+#tabs-nav li a:hover {
+    text-decoration: none;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+    margin: 20px 0 0 0;
+}
+/* ----------------------------- End Tabs ----------------------------- */
+
+
+/* -------------------------------------------- Start projects.html Page ------------------------------------------- */
+/* ---------------------------- Start Modal --------------------------- */
+#overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+#modal {
+    width: 350px;
+    background: #9a9b9d;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    z-index: 1001;
+    display: none;
+}
+#modal .header {
+    background: #4994d0;
+    color: #f3f4f4;
+    padding: 10px;
+    box-shadow: #202020 0 0 10px 0;
+}
+#modal p {
+    margin: 15px;
+}
+#modal .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    margin: 17px 10px;
+    cursor: pointer;
+}
+form {
+    padding: 10px;
+}
+form.input {
+    padding: 10px;
+}
+header {
+    width: 960px;
+}
+.userid {
+    width: 100px;
+    float: left;
+}
+.logoutbox {
+    width: 400px;
+    float: right;
+}
+.mystatus > input[type=radio]{
+    display: none;
+}
+input[type=radio] + img{
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin: 10px 5px 10px 5px;
+}
+input[type=radio]:checked + img{
+    border: 2px solid #f00;
+}
+.colLeft {
+    float: left;
+    margin: 12px 0 5px 0;
+}
+.colRight{
+    float: right;
+    margin: 10px 0 5px 0;
+}
+/* ----------------------------- End Modal ---------------------------- */
+/* --------------------------------------------- End projects.html Page -------------------------------------------- */
+
