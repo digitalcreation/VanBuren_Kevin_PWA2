@@ -1,0 +1,84 @@
+<!doctype html>
+<!--
+	Kevin Van Buren
+	PWA 2 - Project 1 - admin.html
+	Section 01 - Online
+-->
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Project Spiral</title>
+    <meta name="Project Spiral" content="">
+    <meta name="Kevin Van Buren" content="">
+
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS concatenated and minified via ant build script-->
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <!-- end CSS-->
+
+</head>
+<body>
+<!-- Start Nav Bar -->
+    <nav>
+        <div class="nav-bar">
+        	 <ul>
+                <li class="LogoPlaceHolder">Logo</li>
+                <li id="user"><span class="userid">Welcome: </span></li>
+                <li><input id="yourAccount" type="submit" value="Your Account"/></li>
+                <li><input id="logOut" type="submit" value="Sign Out"/></li>
+            </ul>
+        </div>
+    </nav>
+<!-- End Nav Bar -->
+<!-- Start Welcome & info -->
+    <h1>Welcome</h1>
+    <p>This is your dashboard area... Please choose from one of the following options.</p>
+<!-- End Welcome & info -->
+<!-- Start Accordion -->
+    <div>
+        <ul id="tabs-nav">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#users">Users</a></li>
+        </ul>
+        <div id="tabs">
+            <p id="projects">
+                This is where you can go to add, view, and manage all of your Project Spiral tasks and projects!
+                <button id="projectsBtn" class="masterTooltip floatRight" title="Open your Projects Page">Projects</button>
+            </p>
+            <p id="tasks">
+                More information to come.
+                <button class="tasksBtn masterTooltip floatRight" title="Open your Tasks Page">Tasks</button>
+            </p>
+            <p id="users">
+                More information to come.
+                <button class="userBtn masterTooltip floatRight" title="Open your User's Page">Users</button>
+            </p>
+        </div>
+    </div>
+<!-- End Accordion -->
+<!-- Start Image Gallery -->
+    <h3>Image Gallery:</h3>
+    <div>
+        <span><a href="">Insert Image</a></span>
+        <span><a href="">Insert Image</a></span>
+        <span><a href="">Insert Image</a></span>
+        <span><a href="">Insert Image</a></span>
+    </div>
+<!-- End Image Gallery -->
+
+
+    <!-- jquery -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!-- plugins -->
+
+    <!-- main -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

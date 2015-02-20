@@ -61,7 +61,3 @@
         $(this).fadeTo(100, 1);
     });
 })(jQuery); // end private scope
-
-
-
-

@@ -1,0 +1,92 @@
+<!doctype html>
+<!--
+	Kevin Van Buren
+	PWA 2 - Project 1 - index.html
+	Section 01 - Online
+-->
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Project Spiral</title>
+	<meta name="Project Spiral" content="">
+	<meta name="Kevin Van Buren" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<!-- end CSS-->
+	
+</head>
+
+<body>
+<!-- Start Nav Bar -->
+	<nav>
+		<div class="nav-bar">
+			<ul>
+				<li class="LogoPlaceHolder">Logo</li>
+				<li><label for="user"></label></li>
+				<li><input id="user" type="text" maxlength="30" required="required" autocomplete="on" class="masterTooltip" title="Enter your user name" placeholder="User Name"/></li>
+				<li><label for="pass"></label></li>
+				<li><input id="pass" type="password" required="required" autocomplete="on" class="masterTooltip" title="Enter your password" placeholder="Password" /></li>
+				<li><button id="signinButton" type="submit" value="Log In" class="masterTooltip" title="Log into your Project Spiral account">Log In</button></li>
+			</ul>
+		</div>
+	</nav>
+<!-- End Nav Bar -->
+	<div id="wrapper">
+<!-- Start Title Banner -->
+		<div id="ProjectSpiral">
+			<h1 id="psHead">Project Spiral</h1>
+			<h3 id="psSub">Project Management System</h3>
+		</div>
+<!-- End Title Banner -->
+<!-- Start Call to Action -->
+		<div id="benefits">
+			<h2>Free Membership Benefits</h2>
+			<ul>
+				<li>Organize your projects or tasks</li>
+				<li>Designate project priorities</li>
+				<li>Sync your projects to your calender - Coming Soon!</li>
+			</ul>
+			<input id="regButton" type="submit" value="Sign Up" onclick="location.href='register.html'">
+		</div>
+<!-- End Call to Action -->
+	</div>
+	
+
+
+
+	<!-- jquery -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<!-- plugins -->
+
+	<!-- main -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
