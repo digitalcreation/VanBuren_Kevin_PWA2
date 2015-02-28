@@ -103,19 +103,7 @@ h1 {
 <!--Use your own API key and city location-->
 <!--1.Embed the WU 3-day forecast summary feature.-->
 <!--Your Code Here-->
-$(document).ready(function($){
-    
-    $.ajax({
-        url : "http://api.wunderground.com/api/15622397551b8b8b/forecast/q/ID/Moscow.json",
-        dataType : "jsonp",
-        success : function(parsed_json) {
-            var day3 = parsed_json['txt_forecast']['period'];
-            /*var day3 = parsed_json['location']['city'];*/
-            /*var forecast3 = parsed_json['current_observation']['temp_f'];*/
-            $(".three").html("Current temperature in " + day3 + " is: ºF");
-        }
-    });
-});  //Closes Doc Ready Function
+
 
 
 <!--2.Embed the WU 10-day forecast summary feature.-->	
@@ -129,7 +117,17 @@ $(document).ready(function($){
 
 <!--4.Embed the WU Astronomy feature.-->	
 <!--Your Code Here-->
-	
+$(document).ready(function($){
+
+    $.ajax({
+        url : "http://api.wunderground.com/api/15622397551b8b8b/astronomy/q/Australia/Sydney.json",
+        dataType : "jsonp",
+        success : function(parsed_json) {
+            var astro1 = parsed_json['ageOfMoon'];
+            $(".astro").html("Something " + astro1);
+        }
+    });
+});  //Closes Doc Ready Function
 
 <!--5.Embed the WU Almanac for today feature.-->	
 <!--Your Code Here-->
